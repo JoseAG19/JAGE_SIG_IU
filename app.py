@@ -7,7 +7,7 @@ with open('Mapa de Accidentalidad Vial Municipio de Medellín 2016.geojson', "r"
 
 st.title("Accidentalidad Municipio de Medellín 2016")
 
-st.image(
+st.image("Accidentes.jpg")
 
 st.write('Se entiende por accidente de tránsito un evento, generalmente involuntario, generado al menos por un vehículo en movimiento, que causa daños a '
          'personas y bienes involucrados en él, e igualmente afecta la normal circulación de los vehículos que se movilizan por la vía o vías comprendidas en el' 
