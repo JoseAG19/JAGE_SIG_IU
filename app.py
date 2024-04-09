@@ -58,11 +58,11 @@ option_hour_min = st.selectbox('Selecciona filtro por Hora',
 #option_hour_max = st.selectbox('Selecciona filtro por Hora',
 #                               ('08:00:00', '09:00:00', '10:00:00','11:00:00','12:00:00','13:00:00','14:00:00'),key='2')
 option_day = st.selectbox('Selecciona filtro por día',('LUNES', 'MARTES', 'MIÉRCOLES','JUEVES','VIERNES','SÁBADO','DOMINGO'))
-option_neigh = st.selectbox('Selecciona filtro por barrio',
+option_neigh = st.selectbox('Selecciona filtro por Barrio',
                             ('Universidad Nacional','El Poblado'),key='3')
 #df_filtrado = df_g.query('día == "MIÉRCOLES" and Hora >= "08:00:00" and Hora <= "10:00:00"')
 #df_filtrado = df_g.query('día == @option_day and Hora >=  @option_hour_min ')
-df_filtrado = df_g.query('barrio == @option_neigh')
+df_filtrado = df_g.query('Barrio == @option_neigh')
 st.dataframe(df_filtrado)
 
 try:
