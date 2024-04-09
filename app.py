@@ -62,7 +62,7 @@ option_neigh = st.selectbox('Selecciona filtro por barrio',
                             ('Barrio Colón', 'Rosales', 'El Poblado', 'La Castellana', 'Moravia', 'La Candelaria', 'Universidad Nacional'),Key='3')
 #df_filtrado = df_g.query('día == "MIÉRCOLES" and Hora >= "08:00:00" and Hora <= "10:00:00"')
 df_filtrado = df_g.query('día == @option_day and Hora >=  @option_hour_min ')
-df_filtrado2 = df.query('barrio == @option_neigh)
+df_filtrado2 = df.query('barrio == @option_neigh')
 st.dataframe(df_filtrado)
 
 try:
