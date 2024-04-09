@@ -68,16 +68,16 @@ option_hour_max = st.selectbox('Selecciona filtro por Hora Máxima',
                                 '18:00:00', '19:00:00', '20:00:00', '21:00:00', '22:00:00', '23:00:00'), key='2')
 
 # Filtro por barrio
-option_neighborhood = st.selectbox('Selecciona filtro por Barrio', sorted(df_g['Barrio'].unique()))
+#option_neighborhood = st.selectbox('Selecciona filtro por Barrio', sorted(df_g['Barrio'].unique()))
 
 # Filtro por tipo de accidente
-option_accident_type = st.multiselect('Selecciona filtro por Tipo de Accidente', sorted(df_g['Tipo de Accidente'].unique()))
+#option_accident_type = st.multiselect('Selecciona filtro por Tipo de Accidente', sorted(df_g['Tipo de Accidente'].unique()))
 
 # Filtro por gravedad del accidente
-option_severity = st.multiselect('Selecciona filtro por Gravedad del Accidente', sorted(df_g['Gravedad'].unique()))
+#option_severity = st.multiselect('Selecciona filtro por Gravedad del Accidente', sorted(df_g['Gravedad'].unique()))
 
 # Aplicar los filtros
-df_filtrado = df_g.query('Barrio == @option_neighborhood and día == @option_day and Hora >= @option_hour_min and Hora <= @option_hour_max and \
+#df_filtrado = df_g.query('Barrio == @option_neighborhood and día == @option_day and Hora >= @option_hour_min and Hora <= @option_hour_max and \
                          `Tipo de Accidente` in @option_accident_type and Gravedad in @option_severity')
 
 # Mostrar la tabla de datos filtrados
