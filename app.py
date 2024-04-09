@@ -78,7 +78,7 @@ option_hour_max = st.selectbox('Selecciona filtro por Hora Máxima',
 
 # Aplicar los filtros
 #df_filtrado = df_g.query('Barrio == @option_neighborhood and día == @option_day and Hora >= @option_hour_min and Hora <= @option_hour_max and \
-                         `Tipo de Accidente` in @option_accident_type and Gravedad in @option_severity')
+#                         `Tipo de Accidente` in @option_accident_type and Gravedad in @option_severity')
 
 # Mostrar la tabla de datos filtrados
 st.dataframe(df_filtrado)
